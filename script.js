@@ -128,13 +128,20 @@ let avatarAnimationTimeout;
 avatarTrigger.addEventListener("click", () => {
   avatarSound.currentTime = 0;
   avatarSound.play()
-    .then(() => avatarTrigger.setAttribute("aria-label", "Odtwórz dźwięk"))
-    .catch(() => avatarTrigger.setAttribute("aria-label", "Nie udało się odtworzyć dźwięku"));
+    .then(() => {
+      avatarTrigger.setAttribute("aria-label", "Odtwórz dźwięk");
+      avatarTrigger.classList.add("is-playing");
+    })
+    .catch(() => {
+      avatarTrigger.setAttribute("aria-label", "Nie udało się odtworzyć dźwięku");
+      avatarTrigger.classList.remove("is-playing");
+    });
   avatarTrigger.classList.remove("is-clicked");
   requestAnimationFrame(() => avatarTrigger.classList.add("is-clicked"));
   clearTimeout(avatarAnimationTimeout);
   avatarAnimationTimeout = setTimeout(() => avatarTrigger.classList.remove("is-clicked"), 650);
 });
+avatarSound.addEventListener("ended", () => avatarTrigger.classList.remove("is-playing"));
 
 const streamStatus = document.querySelector("#stream-status");
 const streamStatusTitle = document.querySelector("#stream-status-title");
