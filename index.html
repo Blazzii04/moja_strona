@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Oficjalna strona Blazzii — ustawienia, sprzęt i social media."
+    />
+    <meta name="theme-color" content="#090b0d" />
+    <title>Blazzii — gaming setup & socials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Blazzii — strona główna">
+        <span class="wordmark-name">BLAZZII<span>/</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Nawigacja główna">
+        <a class="nav-link active" href="#home"><span>01</span> Start</a>
+        <a class="nav-link" href="#spec"><span>02</span> Specyfikacja</a>
+        <a class="nav-link" href="#gear"><span>03</span> Peryferia</a>
+        <a class="nav-link" href="#settings"><span>04</span> Ustawienia</a>
+        <a class="nav-link" href="#stream"><span>05</span> Stream</a>
+      </nav>
+      <a class="header-contact" href="#contact">
+        <span class="contact-dot"></span> Kontakt
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" /></svg>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-line"></span> PLAYER PROFILE <span class="eyebrow-index">PL / 001</span></div>
+            <p class="hero-kicker">Hej, jestem</p>
+            <h1>Blaz<span>zii</span><span class="hero-period">.</span></h1>
+            <p class="hero-description">
+              Gram, grinduję i niszczę <span class="text-accent">botów.</span><br />
+              Wpadaj na streama — zostań na dłużej.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#settings">
+                Sprawdź mój setup
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v12M3 9l5 5 5-5" /></svg>
+              </a>
+              <a class="button button-support" href="https://tipply.pl/@blazzii" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                Wesprzyj kanał <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-visual reveal reveal-delay">
+            <div class="avatar-stage">
+              <button class="avatar" id="avatar-trigger" type="button" aria-label="Odtwórz dźwięk">
+                <img src="./avatar.jpeg" alt="Zdjęcie profilowe Blazzii" />
+              </button>
+              <div class="avatar-hint" aria-hidden="true">
+                <svg viewBox="0 0 32 16"><path d="M31 8H3m0 0 6-6M3 8l6 6" /></svg>
+                <span>KLIKNIJ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-row reveal">
+          <span class="social-label">FIND ME ON</span>
+          <span class="social-rule"></span>
+          <a class="social-link" href="https://www.twitch.tv/blazzii_" target="_blank" rel="noreferrer" aria-label="Twitch Blazzii">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3 2.5 7v13h5v3h3.5l3-3h4l4-4V3H4Zm16 12-2.5 2.5h-4L11 20v-2.5H6V5h14v10ZM11 8v5m5-5v5" /></svg>
+            <span>Twitch</span><b>↗</b>
+          </a>
+          <a class="social-link" href="https://www.tiktok.com/@blazzii_" target="_blank" rel="noreferrer" aria-label="TikTok Blazzii">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.2a4.2 4.2 0 1 1-3.5-4.14M14 3c.4 3.2 2.4 5.2 6 5.5" /></svg>
+            <span>TikTok</span><b>↗</b>
+          </a>
+          <a class="social-link" href="https://www.faceit.com/pl/players/Blazzii" target="_blank" rel="noreferrer" aria-label="FACEIT Blazzii">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.999 2.705a.167.167 0 0 0-.312-.1 1141.27 1141.27 0 0 0-6.053 9.375H.218c-.221 0-.301.282-.11.352 7.227 2.73 17.667 6.836 23.5 9.134.15.06.39-.08.39-.18z" /></svg>
+            <span>FACEIT</span><b>↗</b>
+          </a>
+          <a class="social-link" href="https://discord.gg/XA92d8K6SP" target="_blank" rel="noreferrer" aria-label="Discord Blazzii">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+            <span>Discord</span><b>↗</b>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell reveal" id="contact" tabindex="-1" aria-label="Kontakt e-mail">
+        <div class="contact-heading">
+          <span class="section-index">KONTAKT / WSPÓŁPRACA</span>
+          <h2>Masz sprawę?<br />Napisz do mnie<span class="heading-dot">.</span></h2>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:blazzikontakt@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>
+            <span>blazzikontakt@gmail.com</span>
+          </a>
+          <button class="email-copy contact-copy" type="button" data-copy-email="blazzikontakt@gmail.com" aria-label="Skopiuj adres e-mail">
+            <span class="copy-label">KOPIUJ ADRES</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" /><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="spec">
+        <div class="section-heading reveal">
+          <div><span class="section-index">02 / HARDWARE</span><h2>Specyfikacja<span class="heading-dot">.</span></h2></div>
+          <p>Silnik, który napędza każdą<br class="desktop-break" /> kolejną rundę.</p>
+        </div>
+        <div class="hardware-grid spec-grid">
+          <article class="hardware-card reveal">
+            <span class="card-number">01</span><span class="hardware-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM9 1v3m6-3v3M9 20v3m6-3v3M1 9h3m-3 6h3m16-6h3m-3 6h3"/></svg></span>
+            <span class="hardware-label">PROCESOR</span><strong>Intel i5-13600KF</strong><span class="card-foot">CPU / PROCESSOR</span>
+          </article>
+          <article class="hardware-card reveal reveal-delay-1">
+            <span class="card-number">02</span><span class="hardware-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="3"/><path d="M15 10h3m-3 4h3m-13 7v-2m14 2v-2"/></svg></span>
+            <span class="hardware-label">KARTA GRAFICZNA</span><strong>RTX 4070</strong><span class="card-foot">GPU / GRAPHICS</span>
+          </article>
+          <article class="hardware-card reveal reveal-delay-2">
+            <span class="card-number">03</span><span class="hardware-icon"><svg viewBox="0 0 24 24"><path d="M5 5h14v14H5zM8 8h2v2H8zm6 0h2v2h-2zm-6 6h2v2H8zm6 0h2v2h-2z"/></svg></span>
+            <span class="hardware-label">PAMIĘĆ RAM</span><strong>DDR5 6000 MHz · 32 GB</strong><span class="card-foot">MEMORY / DDR</span>
+          </article>
+          <article class="hardware-card reveal reveal-delay-3">
+            <span class="card-number">04</span><span class="hardware-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM8 8h8v8H8zM1 8h3m-3 4h3m-3 4h3m16-8h3m-3 4h3m-3 4h3M8 1v3m4-3v3m4-3v3M8 20v3m4-3v3m4-3v3"/></svg></span>
+            <span class="hardware-label">PŁYTA GŁÓWNA</span><strong>Gigabyte Z790 Gaming X</strong><span class="card-foot">MOTHERBOARD</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell gear-section" id="gear">
+        <div class="section-heading reveal">
+          <div><span class="section-index">03 / BATTLE STATION</span><h2>Peryferia<span class="heading-dot">.</span></h2></div>
+          <p>Precyzja zaczyna się<br class="desktop-break" /> od dobrego sprzętu.</p>
+        </div>
+        <div class="gear-list reveal">
+          <div class="gear-row"><span class="gear-count">01</span><span class="gear-icon">▣</span><span class="gear-name">Monitor</span><span class="gear-model">BenQ ZOWIE XL2566X+</span><span class="gear-arrow">↗</span></div>
+          <div class="gear-row"><span class="gear-count">02</span><span class="gear-icon">⌁</span><span class="gear-name">Myszka</span><span class="gear-model">Razer DeathAdder V4 Pro</span><span class="gear-arrow">↗</span></div>
+          <div class="gear-row"><span class="gear-count">03</span><span class="gear-icon">⌨</span><span class="gear-name">Klawiatura</span><span class="gear-model">Logitech G Pro X TKL</span><span class="gear-arrow">↗</span></div>
+          <div class="gear-row"><span class="gear-count">04</span><span class="gear-icon">◖</span><span class="gear-name">Słuchawki</span><span class="gear-model">Logitech G Pro Lightspeed V2</span><span class="gear-arrow">↗</span></div>
+          <div class="gear-row"><span class="gear-count">05</span><span class="gear-icon">▱</span><span class="gear-name">Podkładka</span><span class="gear-model">Saturn Pro</span><span class="gear-arrow">↗</span></div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell settings-section" id="settings">
+        <div class="section-heading reveal">
+          <div><span class="section-index">04 / IN-GAME CONFIG</span><h2>Ustawienia<span class="heading-dot">.</span></h2></div>
+          <p>Każdy detal ma znaczenie.<br class="desktop-break" /> Znajdź swój sweet spot.</p>
+        </div>
+        <div class="settings-layout reveal">
+          <div class="settings-tabs" role="tablist" aria-label="Kategorie ustawień">
+            <button class="settings-tab active" id="tab-video" type="button" role="tab" aria-selected="true" aria-controls="panel-video" data-tab="video"><span class="tab-icon">◫</span><span>Video</span><span class="tab-arrow">↗</span></button>
+            <button class="settings-tab" id="tab-mouse" type="button" role="tab" aria-selected="false" aria-controls="panel-mouse" data-tab="mouse"><span class="tab-icon">⌖</span><span>Mouse settings</span><span class="tab-arrow">↗</span></button>
+            <button class="settings-tab" id="tab-keyboard" type="button" role="tab" aria-selected="false" aria-controls="panel-keyboard" data-tab="keyboard"><span class="tab-icon">⌨</span><span>Keyboard</span><span class="tab-arrow">↗</span></button>
+            <button class="settings-tab" id="tab-monitor" type="button" role="tab" aria-selected="false" aria-controls="panel-monitor" data-tab="monitor"><span class="tab-icon">▣</span><span>Monitor</span><span class="tab-arrow">↗</span></button>
+            <div class="tab-note"><span class="live-pulse"></span> CONFIG: ACTIVE<br /><small>UPDATED FOR COMPETITIVE PLAY</small></div>
+          </div>
+          <div class="settings-panels">
+            <div class="settings-panel active" id="panel-video" role="tabpanel" aria-labelledby="tab-video" data-panel="video">
+              <div class="panel-top"><span>VIDEO SETTINGS</span><span>01 — 04</span></div>
+              <div class="setting-row"><span>Display mode</span><strong>Fullscreen</strong></div>
+              <div class="setting-row"><span>Resolution</span><strong>1280 × 960</strong></div>
+              <div class="setting-row"><span>Aspect ratio</span><strong>4:3</strong></div>
+              <div class="setting-row"><span>Scaling mode</span><strong>Stretched</strong></div>
+              <div class="setting-row"><span>Brightness</span><strong>93<span class="setting-unit">%</span></strong></div>
+            </div>
+            <div class="settings-panel" id="panel-mouse" role="tabpanel" aria-labelledby="tab-mouse" data-panel="mouse" hidden>
+              <div class="panel-top"><span>MOUSE SETTINGS</span><span>02 — 04</span></div>
+              <div class="setting-row"><span>DPI</span><strong>800</strong></div>
+              <div class="setting-row"><span>Sensitivity</span><strong>1.25</strong></div>
+              <div class="setting-row"><span>Polling rate</span><strong>1000<span class="setting-unit">Hz</span></strong></div>
+              <div class="setting-row"><span>Windows sensitivity</span><strong>6 / 11</strong></div>
+            </div>
+            <div class="settings-panel" id="panel-keyboard" role="tabpanel" aria-labelledby="tab-keyboard" data-panel="keyboard" hidden>
+              <div class="panel-top"><span>KEYBOARD SETTINGS</span><span>03 — 04</span></div>
+              <div class="setting-row"><span>Activation point</span><strong>1.0<span class="setting-unit">mm</span></strong></div>
+              <div class="setting-row"><span>Rapid trigger</span><strong>0.4<span class="setting-unit">mm</span></strong></div>
+            </div>
+            <div class="settings-panel" id="panel-monitor" role="tabpanel" aria-labelledby="tab-monitor" data-panel="monitor" hidden>
+              <div class="panel-top"><span>MONITOR SETTINGS</span><span>04 — 04</span></div>
+              <div class="setting-row"><span>Mode</span><strong>FPS 1</strong></div>
+              <div class="setting-row"><span>Black equalizer</span><strong>10</strong></div>
+              <div class="setting-row"><span>Color vibrance</span><strong>12</strong></div>
+              <div class="setting-row"><span>Low blue light</span><strong>0</strong></div>
+              <div class="setting-row"><span>Gamma</span><strong>3</strong></div>
+              <div class="setting-row"><span>Color temperature</span><strong>Normal</strong></div>
+              <div class="setting-row"><span>DyAc</span><strong>Premium</strong></div>
+              <div class="setting-row"><span>Brightness</span><strong>85</strong></div>
+              <div class="setting-row"><span>Contrast</span><strong>50</strong></div>
+              <div class="setting-row"><span>Sharpness</span><strong>8</strong></div>
+              <div class="setting-row"><span>AMA</span><strong>High</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stream-section section-shell reveal" id="stream" aria-labelledby="stream-title">
+        <div class="stream-heading">
+          <div>
+            <span class="section-index">TWITCH / STREAM</span>
+            <h2 id="stream-title">Wbijaj na stream<span class="heading-dot">.</span></h2>
+          </div>
+          <a class="stream-channel-link" href="https://www.twitch.tv/blazzii_" target="_blank" rel="noreferrer">
+            Otwórz kanał <span>↗</span>
+          </a>
+        </div>
+        <div class="stream-player">
+          <div id="twitch-player" aria-label="Player Twitch Blazzii"></div>
+          <div class="stream-status" id="stream-status" aria-live="polite">
+            <span class="stream-status-label"><i></i><span>TWITCH / LIVE STATUS</span></span>
+            <h3 id="stream-status-title">Sprawdzam transmisję…</h3>
+            <p id="stream-status-description">Za chwilę pokażę aktualny status kanału.</p>
+            <a href="https://www.twitch.tv/blazzii_" target="_blank" rel="noreferrer">Otwórz kanał Twitch <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="footer-brand" href="#home">B<span>.</span> BLAZZII</a>
+      <a class="easter-egg" href="https://www.youtube.com/watch?v=ZOYb9reXYdg&amp;list=RDZOYb9reXYdg&amp;start_radio=1" target="_blank" rel="noreferrer">
+        <strong>FAJNA NUTKA</strong>
+      </a>
+      <span>© <span id="year"></span> BLAZZII</span>
+    </footer>
+    <audio id="avatar-sound" src="./oo-ee-a-ea.mp3" preload="none"></audio>
+    <a class="back-top-float" href="#home" aria-label="Wróć na górę strony">
+      <span>BACK TO TOP</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" /></svg>
+    </a>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
